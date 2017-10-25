@@ -10,24 +10,24 @@ Now run one of the installation scripts below:
 
 ### Powershell
 ```powershell
-&{$wc=New-Object System.Net.WebClient;$wc.Proxy=[System.Net.WebRequest]::DefaultWebProxy;$wc.Proxy.Credentials=[System.Net.CredentialCache]::DefaultNetworkCredentials;Invoke-Expression($wc.DownloadString('https://raw.githubusercontent.com/danroth27/dotnettoolbox/master/install.ps1'))}
+&{$wc=New-Object System.Net.WebClient;$wc.Proxy=[System.Net.WebRequest]::DefaultWebProxy;$wc.Proxy.Credentials=[System.Net.CredentialCache]::DefaultNetworkCredentials;Invoke-Expression($wc.DownloadString('https://raw.githubusercontent.com/wli3/dotnettoolbox/master/install.ps1'))}
 ```
 
 ### CMD
 ```cmd
-@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&{$wc=New-Object System.Net.WebClient;$wc.Proxy=[System.Net.WebRequest]::DefaultWebProxy;$wc.Proxy.Credentials=[System.Net.CredentialCache]::DefaultNetworkCredentials;Invoke-Expression($wc.DownloadString('https://raw.githubusercontent.com/danroth27/dotnettoolbox/master/install.ps1'))}"
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&{$wc=New-Object System.Net.WebClient;$wc.Proxy=[System.Net.WebRequest]::DefaultWebProxy;$wc.Proxy.Credentials=[System.Net.CredentialCache]::DefaultNetworkCredentials;Invoke-Expression($wc.DownloadString('https://raw.githubusercontent.com/wli3/dotnettoolbox/master/install.ps1'))}"
 ```
 
 ### Bash
 ```bash
-\curl -sSL https://raw.githubusercontent.com/danroth27/dotnettoolbox/master/install.sh | bash
+\curl -sSL https://raw.githubusercontent.com/wli3/dotnettoolbox/master/install.sh | bash
 ```
 
 ### Update to latest build
 
-After running the install script you can run the following to update to the latest build on [MyGet](https://www.myget.org/gallery/danroth27):
+After running the install script you can run the following to update to the latest build on [MyGet](https://www.myget.org/gallery/wli3):
 ```cmd
-dotnet toolbox install dotnet-toolbox -v 1.0.0-* -s https://www.myget.org/F/danroth27/api/v3/index.json
+dotnet toolbox install dotnet-toolbox -v 1.0.0-* -s https://www.myget.org/F/wli3/api/v3/index.json
 ```
 
 ## Usage

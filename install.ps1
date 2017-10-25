@@ -1,4 +1,4 @@
-﻿$release = Invoke-RestMethod https://api.github.com/repos/danroth27/DotNetToolbox/releases/latest
+﻿$release = Invoke-RestMethod https://api.github.com/repos/dwli3DotNetToolbox/releases/latest
 $assets = $release.assets
 $toolboxAsset = $assets | Where-Object {$_.name -eq "dotnet-toolbox.zip"}
 $zipUrl = $toolboxAsset[0].browser_download_url

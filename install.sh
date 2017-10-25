@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-uri="https://github.com/danroth27/DotNetToolbox/releases/download/0.1.0/dotnet-toolbox.tar.gz"
+uri="https://github.com/wli3/DotNetToolbox/releases/download/0.1.0/dotnet-toolbox.tar.gz"
 if command -v tempfile >/dev/null 2>&1; then
     outFile=`tempfile`
 else
