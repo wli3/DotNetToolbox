@@ -95,7 +95,7 @@ namespace DotNetToolbox
         {
             // TODO: Figure out the latest installed shared framework, maybe consider tool targets as well
             // Hard code for now
-            return "netcoreapp1.1";
+            return "netcoreapp2.0";
         }
 
         private string GetRestoredPackageVersion(string projectDir, string packageId)

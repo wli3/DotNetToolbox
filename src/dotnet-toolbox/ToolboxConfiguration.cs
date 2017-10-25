@@ -15,6 +15,7 @@ namespace DotNetToolbox
         public string DefaultProject = @"<Project Sdk=""Microsoft.NET.Sdk"">
   <PropertyGroup>
     <TargetFramework>{0}</TargetFramework>
+    <RestorePackagesPath>""E:\test_tools_nuget""</RestorePackagesPath>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include=""{1}"" Version=""{2}"" />
